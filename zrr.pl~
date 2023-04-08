@@ -1,0 +1,9 @@
+male(pop).
+male(dsw).
+male(xavier).
+
+female(zhavli).
+female(titas).
+
+predecessor(X,Z):-parent(X,Z).
+predecessor(X,Z):-paremt(X,Y) ,parent(Y,Z).

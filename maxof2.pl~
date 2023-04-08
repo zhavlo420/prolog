@@ -1,0 +1,4 @@
+book(book1,"karmasutra","zhavla","segs").
+book(book2,"choding","pabla","tech").
+
+available(book):-book(book,_,_).

@@ -1,0 +1,10 @@
+%add an element in front of the list and del an element from taiY list%
+%X =  ELEMENT Y= LIST%
+
+add(X,Y,[Y|X]).
+
+
+
+delete_ele([_],[]).
+delete_ele([X|Y],[X|Y1]):-
+    delete_ele(Y,Y1).

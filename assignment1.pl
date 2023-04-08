@@ -1,0 +1,55 @@
+/*                                   Exp 1
+Study of facts, objects, predicates(relations) and variables in PROLOG.
+Student Name: Soham Dange       Registration No.:22BCE11323
+Submission Date:29/11/22
+Definitions:-
+    Facts:-
+    Objects:-
+    Predicates(Relations):-
+    Variables:-
+*/
+                                  /*Code*/
+parent(bob,ann).
+parent(pat,jim).
+parent(pam,liz).
+
+male(bob).
+male(pat).
+male(pam).
+
+female(ann).
+female(jim).
+female(liz).
+father(X,Y) :- male(X),parent(X,Y).
+
+grandfather(X,Y) :- male(X),parent(X,liz),parent(pam,Y).
+
+grandchild(X, Z) :-
+  parent(Y, X),
+  parent(Z, Y).
+
+
+
+
+
+/*                                  Output:-
+
+
+
+
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
